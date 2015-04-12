@@ -1,0 +1,66 @@
+    <ons-modal var="modal">
+        <ons-icon icon="ion-loading-c" spin="true"></ons-icon>
+        <br><br>
+        Los datos estan siendo procesados...
+</ons-modal>
+    
+    <ons-page>
+    
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+            </div>    
+            <div class="center">Medir Calidad - General</div>
+        </ons-toolbar>
+        <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
+        
+            <ons-carousel-item style="background-color: #174350;">
+                <br />
+                <br />
+                <br />
+                <div class="label-prueba lbl-grande">1</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="label-prueba lbl">Ingrese la muestra en el dispositivo</div>
+                <br />
+                <br />
+                <br />
+                <ons-icon size="80px" icon="ion-funnel"></ons-icon>
+            </ons-carousel-item>
+            
+            <ons-carousel-item style="background-color: #39BB9C;">
+                <br />
+                <br />
+                <br />
+                <div class="label-prueba lbl-grande">2</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="label-prueba lbl">Procesar muestra</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <ons-icon size="80px" icon="ion-ios-flask-outline" ></ons-icon>        
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div style="padding: 10px 9px">
+                 <ons-button modifier="large" class="button button--light button--large" style="background-color:white; color:gray;" onclick = "activarLoading()">Iniciar</ons-button>
+                </div>
+
+            </ons-carousel-item>
+            
+            
+            
+
+
+
+
+            
+    </ons-page>

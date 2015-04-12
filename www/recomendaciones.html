@@ -1,0 +1,55 @@
+
+ <ons-page ng-controller="recomendacionesCtrl">
+      <ons-toolbar>
+      <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Recomendaciones</div>
+      </ons-toolbar>
+
+      <ons-list>
+
+        <ons-list-item modifier="chevron" class="list-item-container">
+          <ons-row>
+            <ons-col>
+              <div class="name">
+                Hervir el agua
+              </div>
+              <div class="desc">
+                Calentar el agua a temperatura de ebullicion durante al menos 30 minutos. Tambien es posible colocar el agua en botellas plasticas
+                transparentes por 2 dias en el techo, para ser expuesta a la luz y el calor del sol.
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+        <ons-list-item modifier="chevron" class="list-item-container">
+          <ons-row>
+            <ons-col>
+              <div class="name">
+                Por metodo quimico
+              </div>
+              <div class="desc">
+                Añadir hipoclorito sódico o cálcico a un balde de agua, mezclar energéticamente, dejar reposar 30 minutos. Si el agua está turbia, utilizar métodos de filtración y/o sedimentación primero. 
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+        <ons-list-item modifier="chevron" class="list-item-container">
+          <ons-row>
+            <ons-col>
+              <div class="name">
+                Movimiento
+              </div>
+              <div class="desc">
+                Agitar vigorosamente volúmenes pequeños en recipientes transparentas y exponer al sol al menos 6 horas. 
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>        
+      </ons-list>
+    </ons-page>

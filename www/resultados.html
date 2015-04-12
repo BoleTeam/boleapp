@@ -1,0 +1,101 @@
+<ons-page ng-controller="resultadosCtrl">
+      <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+            
+        <div class="center">Obtener Resultados</div>
+      </ons-toolbar>
+
+    
+
+      <div class="settings-header">Sensores</div>
+
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item> 
+          <ons-row>
+            <ons-col width="40px">
+              <ons-icon  icon="ion-thermometer"></ons-icon>
+            </ons-col>
+            <ons-col >
+             {{temperatura}} ºC
+            </ons-col>
+            <ons-col>
+                <input type="range" value="{{temperaturaMap}}" class="range">
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+        <ons-list-item>
+          <ons-row>
+            <ons-col width="40px">
+              <ons-icon icon="ion-beaker"></ons-icon>
+            </ons-col>
+            <ons-col >
+              {{turbiedad}} UNT
+            </ons-col>
+            <ons-col class="range-wrapper">
+              <input type="range" value="{{turbiedadMap}}" class="range" >
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+        <ons-list-item>
+          <ons-row>
+            <ons-col width="40px">
+              pH
+            </ons-col>
+            <ons-col >
+              {{pH}}
+            </ons-col>
+            <ons-col class="range-wrapper">
+              <input type="range" value="{{pHMap}}" class="range">
+            </ons-col>
+          </ons-row>
+         </ons-list-item>
+         <ons-list-item>
+          <ons-row>
+            <ons-col width="40px">
+              <ons-icon icon="ion-ios-flower-outline"></ons-icon>
+            </ons-col>
+            <ons-col >
+              0 CFU/mL
+            </ons-col>
+            <ons-col class="range-wrapper">
+              <input type="range" value="0" class="range">
+            </ons-col>
+          </ons-row>  
+        </ons-list-item>
+      </ons-list>   
+      
+      
+
+      <div class="settings-header">Otros</div>
+
+         <ons-list modifier="inset" class="settings-list">
+        <ons-list-item> 
+          <ons-row>
+            <ons-col width="40px">
+              Cl
+            </ons-col>
+            <ons-col >
+              1 mg/L
+            </ons-col>
+            <ons-col>
+                <input type="range" value="30" class="range">
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+ 
+      </ons-list>
+
+    <br>
+    <br>
+    <br>
+    
+    <div style="padding: 10px 9px">
+        <ons-button modifier="large" style="margin: 0 auto;" onclick="app.slidingMenu.setMainPage('recomendaciones.html', {closeMenu: true});">
+          Ver Recomendaciones
+        </ons-button>
+    </div>
+
+
+</ons-page>
